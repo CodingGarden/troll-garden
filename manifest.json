@@ -1,0 +1,19 @@
+{
+    "name": "Troll Garden",
+    "description": "Troll Garden",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "/js/background.js"
+    },
+    "permissions": ["storage", "activeTab", "scripting"],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "options_page": "options.html",
+    "content_scripts": [{
+        "css": ["/css/styles.css"],
+        "js": ["/js/content.js"],
+        "matches": ["http://*/*", "https://*/*"]
+    }]
+  }
