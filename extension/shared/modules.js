@@ -51,23 +51,11 @@ export default [{
   },
   run: () => {
     console.log('Random Rick Roll inserter running...');
-    const style = document.createElement('style');
-    const nothingLink = document.createElement('a');
-    nothingLink.style.display = 'none';
-    nothingLink.href = 'https://youveneverbeenhere.com/really';
-    document.body.append(nothingLink);
-    const cssObj = window.getComputedStyle(nothingLink, null);
-    const color = cssObj.getPropertyValue('color');
-    console.log('color', color);
-    style.innerHTML = `a:visited { color: ${color} !important; }`;
-    document.body.append(style);
     const rickRoll = () => {
       document.querySelectorAll('a').forEach((anchor) => {
-        anchor.style.color = color;
-        anchor.setAttribute('href', 'https://www.youtube.com/watch?v=dQw4w9WgXcQ');
+        anchor.addEventListener('click', () => location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ')
       });
     };
-    rickRoll();
     window.addEventListener('DOMContentLoaded', rickRoll);
   },
   cleanup() {
