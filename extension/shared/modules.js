@@ -53,7 +53,10 @@ export default [{
     console.log('Random Rick Roll inserter running...');
     const rickRoll = () => {
       document.querySelectorAll('a').forEach((anchor) => {
-        anchor.addEventListener('click', () => location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ');
+        anchor.addEventListener('click', e => {
+          e.preventDefault() // disable the original behavior
+          location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
+        });
       });
     };
     window.addEventListener('DOMContentLoaded', rickRoll);
