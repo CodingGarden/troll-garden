@@ -73,4 +73,21 @@ export default [{
   cleanup() {
 
   },
+}, {
+  id: 52,
+  type: 'content',
+  name: 'Update input values to uppercase',
+  settings: {
+    enabled: false
+  },
+  upper: ({target}) => {
+    if(target.value)
+      target.value = target.value.toUpperCase();
+  },
+  run: () => {
+    document.addEventListener('keydown', upper);
+  },
+  cleanup: () => {
+    document.removeEventListener('keydown', upper);
+  }
 }];
