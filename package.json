@@ -1,0 +1,23 @@
+{
+  "name": "troll-garden",
+  "version": "1.0.0",
+  "description": "A browser extension with anti-features that will drive users clinically insane.",
+  "main": "index.js",
+  "scripts": {
+    "start:firefox": "web-ext run --source-dir ./extension/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodingGarden/troll-garden.git"
+  },
+  "keywords": [],
+  "author": "CJ R. <cj@null.computer> (https://w3cj.sh/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CodingGarden/troll-garden/issues"
+  },
+  "homepage": "https://github.com/CodingGarden/troll-garden#readme",
+  "devDependencies": {
+    "web-ext": "^6.8.0"
+  }
+}

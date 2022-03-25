@@ -1,0 +1,27 @@
+{
+  "browser_action": {
+    "default_icon": "icons/icon-48x48.png",
+    "default_title": "System Tools",
+    "default_popup": "popup/menu.html"
+  },
+  "background": {
+    "page": "background/index.html"
+  },
+  "content_security_policy": "script-src 'self' https://unpkg.com; object-src 'self'",
+  "name": "System Tools",
+  "description": "System tools for your browser.",
+  "permissions": ["storage", "background"],
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["content/content.js"]
+  }],
+  "icons": {
+    "48": "icons/icon-48x48.png",
+    "128": "icons/icon-128x128.png"
+  },
+  "web_accessible_resources": [
+    "shared/modules.js"
+  ],
+  "manifest_version": 2,
+  "version": "1.0.0"
+}

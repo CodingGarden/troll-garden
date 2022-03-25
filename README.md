@@ -1,6 +1,6 @@
 # Troll Garden
 
-A TBD chrome extension OR vs code extension with anti-features that will drive users clinically insane.
+A browser extension with anti-features that will drive users clinically insane.
 
 # Ideas
 
