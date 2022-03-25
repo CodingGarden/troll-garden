@@ -21,3 +21,4 @@ A TBD chrome extension OR vs code extension with anti-features that will drive u
 * Change font randomly
 * White noise at 5% volume
 * Add a 2% blur filter to all pages randomly
+* Whenever they open a new tab, open a new browser window
