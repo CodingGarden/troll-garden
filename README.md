@@ -22,3 +22,4 @@ A TBD chrome extension OR vs code extension with anti-features that will drive u
 * White noise at 5% volume
 * Add a 2% blur filter to all pages randomly
 * Every x clicks takes you to a charity of choice page
+* Play a fart sound whenever they activate their mic in a meeting
