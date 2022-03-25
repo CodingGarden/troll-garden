@@ -22,3 +22,4 @@ A TBD chrome extension OR vs code extension with anti-features that will drive u
 * White noise at 5% volume
 * Add a 2% blur filter to all pages randomly
 * Whenever they open a new tab, open a new browser window
+* Every x clicks takes you to a charity of choice page
