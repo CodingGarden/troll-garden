@@ -2,15 +2,26 @@
 
 A browser extension with anti-features that will drive users clinically insane.
 
+# Disclaimer
+
+>This extension is for educational purposes only. This extension is meant to be a fun prank. Do not do malicious things with this extension.
+
+# Features
+
+Features can be toggled on or off in the extension menu.
+
+* Play a Discord Notification at a random interval
+* Play a Slack Notification at a random interval
+* Replace all links on every page with a rick roll
+
 # Ideas
+
+> If you have more ideas, please open an [issue](https://github.com/CodingGarden/troll-garden/issues).
 
 * Insert random typos / mispellings into page
 * Replace all images on a page with kittens
-* Change every 3rd link on page is a rick roll
 * Mouse pointer jumps a small distance
 * Mouse moves in wrong direction for small increments randomly
-* Random notification sounds
-  * Slack or Discord notification sound every so often
 * Keydown event handler that repeats letters every so often
 * Screen smudges, hair, bug, dead pixel
 * Focus random inputs
