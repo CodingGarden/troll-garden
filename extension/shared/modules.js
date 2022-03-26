@@ -64,4 +64,15 @@ export default [{
   cleanup() {
 
   },
+}, {
+  id: 51,
+  type: 'content',
+  name: 'Add a 1px blur on the whole page',
+  settings: { 
+    enabled: false
+  },
+  run: () => {
+    document.body.style.filter = 'blur(1px)'
+  },
+  cleanup: () => document.body.style.filter = ''
 }];
