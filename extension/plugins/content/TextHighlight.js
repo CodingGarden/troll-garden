@@ -16,7 +16,7 @@ class TextHighlight extends ContentPlugin {
   }
 
   cleanup() {
-    document.body.style.filter = '';
+    document.body.style.userSelect = '';
   }
 }
 
