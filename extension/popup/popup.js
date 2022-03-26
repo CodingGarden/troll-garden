@@ -1,29 +1,29 @@
-import modules from '../shared/modules.js';
+import plugins from '../plugins/index.js';
 
 const fieldsetElement = document.querySelector('#menu fieldset');
 
-modules.forEach((mod) => {
-  const mod_id = `module_${mod.id}`;
-  chrome.storage.local.get(mod_id, (settingsJSON) => {
-    settingsJSON = settingsJSON[mod_id] || mod.settings;
+plugins.forEach((plugin) => {
+  const plugin_id = `plugin_${plugin.id}`;
+  chrome.storage.local.get(plugin_id, (savedSettings) => {
+    savedSettings = savedSettings[plugin_id] || plugin.settings;
     const labelElement = document.createElement('label');
-    labelElement.setAttribute('for', mod_id);
+    labelElement.setAttribute('for', plugin_id);
     const inputElement = document.createElement('input');
     inputElement.setAttribute('type', 'checkbox');
-    inputElement.setAttribute('id', mod_id);
-    inputElement.setAttribute('name', mod_id);
+    inputElement.setAttribute('id', plugin_id);
+    inputElement.setAttribute('name', plugin_id);
     inputElement.setAttribute('role', 'switch');
-    inputElement.checked = settingsJSON.enabled;
+    inputElement.checked = savedSettings.enabled;
     inputElement.addEventListener('input', () => {
       chrome.storage.local.set({
-        [mod_id]: {
-          ...settingsJSON,
+        [plugin_id]: {
+          ...savedSettings,
           enabled: inputElement.checked,
         },
       });
     });
     const spanElement = document.createElement('span');
-    spanElement.textContent = mod.name;
+    spanElement.textContent = plugin.name;
     labelElement.append(inputElement);
     labelElement.append(spanElement);
     fieldsetElement.append(labelElement);

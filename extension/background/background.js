@@ -1,26 +1,26 @@
-import modules from '../shared/modules.js';
+import plugins from '../plugins/index.js';
 
-console.log('SYSTEM TOOLS READY!');
-
-modules.forEach((mod) => {
-  const mod_id = `module_${mod.id}`;
-  chrome.storage.local.get(mod_id, (settingsJSON) => {
-    settingsJSON = settingsJSON[mod_id] || mod.settings;
-    if (mod.type === 'background' && settingsJSON.enabled) {
-      mod.run();
+plugins.forEach((plugin) => {
+  const plugin_id = `plugin_${plugin.id}`;
+  chrome.storage.local.get(plugin_id, (savedSettings) => {
+    savedSettings = savedSettings[plugin_id] || plugin.settings;
+    if (plugin.type === 'background' && savedSettings.enabled) {
+      plugin.settings = savedSettings;
+      plugin.run();
     }
   });
 });
 
 chrome.storage.onChanged.addListener((changes) => {
-  console.log(changes);
-  const [mod_id] = Object.keys(changes);
-  const [, id] = mod_id.split('_');
-  const foundMod = modules.find((mod) => mod.id == id);
-  const { newValue } = changes[mod_id];
-  if (foundMod.type === 'background' && newValue.enabled) {
-    foundMod.run();
-  } else if (foundMod.type === 'background') {
-    foundMod.cleanup();
+  const [plugin_id] = Object.keys(changes);
+  const [, id] = plugin_id.split('_');
+  // eslint-disable-next-line eqeqeq
+  const plugin = plugins.find((p) => p.id == id);
+  const { newValue } = changes[plugin_id];
+  if (plugin.type === 'background' && newValue.enabled) {
+    plugin.settings = newValue;
+    plugin.run();
+  } else if (plugin.type === 'background') {
+    plugin.cleanup();
   }
 });
