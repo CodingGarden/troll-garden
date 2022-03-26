@@ -17,7 +17,7 @@ class SlowYTVids extends ContentPlugin {
   run() {
     const slowVID = () => {
       document.querySelectorAll('video').forEach(vid => {
-        vid.playbackRate = (typeof speed === 'undefined') ? .4 : speed;
+        vid.playbackRate = (typeof this.settings.speed === 'undefined') ? .4 : this.settings.speed;
       })
     }
     // only slowdown vids on YouTube
