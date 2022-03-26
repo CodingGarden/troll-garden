@@ -1,6 +1,6 @@
 import ContentPlugin from '../../lib/ContentPlugin.js';
 
-class PageBlur extends ContentPlugin {
+class AcceptOurPies extends ContentPlugin {
   constructor() {
     super('Add an "Accept our pies" dialog to every page');
   }
@@ -71,5 +71,4 @@ class PageBlur extends ContentPlugin {
   }
 }
 
-export default PageBlur;
-diff --git a/extension/plugins/index.js b/extension/plugins/index.js
+export default AcceptOurPies;
