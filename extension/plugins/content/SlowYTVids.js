@@ -1,6 +1,6 @@
 import ContentPlugin from '../../lib/ContentPlugin.js';
 
-class PageBlur extends ContentPlugin {
+class SlowYTVids extends ContentPlugin {
   constructor() {
     super('Slow down YouTube video payback speed');
   }
