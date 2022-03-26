@@ -37,4 +37,4 @@ class SlowYTVids extends ContentPlugin {
   }
 }
 
-export default PageBlur;
+export default SlowYTVids;
