@@ -17,7 +17,7 @@ class PageBlur extends ContentPlugin {
   run() {
     const slowVID = () => {
       document.querySelectorAll('video').forEach(vid => {
-        vid.playbackRate = speed || .4;
+        vid.playbackRate = (typeof speed === 'undefined') ? .4 : speed;
       })
     }
     // only slowdown vids on YouTube
