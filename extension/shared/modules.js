@@ -1,7 +1,5 @@
 const intervals = new Map();
 
-const discordNotificationTimeout = (5 + (Math.random() * 6)) * (60 * 1000);
-const slackNotificationTimeout = (7 + (Math.random() * 6)) * (60 * 1000);
 
 export default [{
   id: 0,
@@ -12,6 +10,7 @@ export default [{
   },
   run: () => {
     console.log('Discord notification running...');
+    const discordNotificationTimeout = (5 + (Math.random() * 6)) * (60 * 1000);
     const sound = new Audio('../sounds/discord.mp3');
     const intervalId = setInterval(() => {
       console.log('Playing discord notification...');
@@ -31,6 +30,7 @@ export default [{
     enabled: false,
   },
   run: () => {
+    const slackNotificationTimeout = (7 + (Math.random() * 6)) * (60 * 1000);
     const sound = new Audio('../sounds/slack.mp3');
     const intervalId = setInterval(() => {
       console.log('Playing slack notification...');
