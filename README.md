@@ -15,6 +15,7 @@ Features can be toggled on or off in the extension menu.
 * Replace all links on every page with a rick roll
 * Add a 1px blur over 5 seconds to the whole page
 * Add comic sans to every page
+* Disable text highlighting on the page
 
 # Ideas
 
