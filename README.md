@@ -14,6 +14,7 @@ Features can be toggled on or off in the extension menu.
 * Play a Slack Notification at a random interval
 * Replace all links on every page with a rick roll
 * Add a 1px blur over 5 seconds to the whole page
+* Add a dead pixel
 
 # Ideas
 
@@ -24,7 +25,7 @@ Features can be toggled on or off in the extension menu.
 * Mouse pointer jumps a small distance
 * Mouse moves in wrong direction for small increments randomly
 * Keydown event handler that repeats letters every so often
-* Screen smudges, hair, bug, dead pixel
+* Screen smudges, hair, bug
 * Focus random inputs
 * Actually show ads if they have adblocker
 * Possibly: eject / open CD tray randomly
