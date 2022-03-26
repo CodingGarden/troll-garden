@@ -14,6 +14,8 @@ Features can be toggled on or off in the extension menu.
 * Play a Slack Notification at a random interval
 * Replace all links on every page with a rick roll
 * Add a 1px blur over 5 seconds to the whole page
+* Add comic sans to every page
+* Disable text highlighting on the page
 * Add a dead pixel
 
 # Ideas
