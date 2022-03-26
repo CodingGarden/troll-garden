@@ -13,6 +13,7 @@ Features can be toggled on or off in the extension menu.
 * Play a Discord Notification at a random interval
 * Play a Slack Notification at a random interval
 * Replace all links on every page with a rick roll
+* Add a 1px blur over 5 seconds to the whole page
 
 # Ideas
 
@@ -31,7 +32,6 @@ Features can be toggled on or off in the extension menu.
 * When they google, show bing results
 * Change font randomly
 * White noise at 5% volume
-* Add a 2% blur filter to all pages randomly
 * Whenever they open a new tab, open a new browser window
 * Every x clicks takes you to a charity of choice page
 * Play a fart sound whenever they activate their mic in a meeting
