@@ -1,6 +1,8 @@
 import RandomDiscordNotification from './background/RandomDiscordNotification.js';
 import RandomSlackNotification from './background/RandomSlackNotification.js';
 import AllLinksRickRoll from './content/AllLinksRickRoll.js';
+import ComicSans from './content/ComicSans.js';
+import TextHighlight from './content/TextHighlight.js';
 import PageBlur from './content/PageBlur.js';
 import SlowYTVids from './content/SlowYTVids.js';
 
@@ -10,4 +12,6 @@ export default [
   new AllLinksRickRoll(),
   new PageBlur(),
   new SlowYTVids(),
+  new ComicSans(),
+  new TextHighlight(),
 ];
