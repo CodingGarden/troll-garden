@@ -23,3 +23,4 @@ A browser extension with anti-features that will drive users clinically insane.
 * Add a 2% blur filter to all pages randomly
 * Whenever they open a new tab, open a new browser window
 * Every x clicks takes you to a charity of choice page
+* Play a fart sound whenever they activate their mic in a meeting
