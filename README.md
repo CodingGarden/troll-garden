@@ -16,6 +16,7 @@ Features can be toggled on or off in the extension menu.
 * Add a 1px blur over 5 seconds to the whole page
 * Add comic sans to every page
 * Disable text highlighting on the page
+* Add a dead pixel
 
 # Ideas
 
@@ -26,7 +27,7 @@ Features can be toggled on or off in the extension menu.
 * Mouse pointer jumps a small distance
 * Mouse moves in wrong direction for small increments randomly
 * Keydown event handler that repeats letters every so often
-* Screen smudges, hair, bug, dead pixel
+* Screen smudges, hair, bug
 * Focus random inputs
 * Actually show ads if they have adblocker
 * Possibly: eject / open CD tray randomly
