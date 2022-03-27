@@ -5,15 +5,15 @@ class AcceptOurPies extends ContentPlugin {
     super('Add an "Accept our pies" dialog to every page');
   }
 
-  id = 59;
+  id = 60;
 
   settings = {
     enabled: false,
   };
 
   run() {
-    let dialog = document.createElement('dialog')
-    let styles = document.createElement('style')
+    const dialog = document.createElement('dialog');
+    const styles = document.createElement('style');
 
     styles.innerHTML = `
     dialog {
@@ -50,7 +50,7 @@ class AcceptOurPies extends ContentPlugin {
     button:active {
         background: #ddd;
     }
-    `
+    `;
     dialog.innerHTML = `
       <article>
         <h1>Pies</h1>
@@ -60,14 +60,14 @@ class AcceptOurPies extends ContentPlugin {
             <button onClick="this.closest('dialog')?.close()">Yes, I accept</button>
         </footer>
       </article>
-    `
-    dialog.open = true
-    document.body.appendChild(styles)
-    document.body.appendChild(dialog)
+    `;
+    dialog.open = true;
+    document.body.appendChild(styles);
+    document.body.appendChild(dialog);
   }
 
   cleanup() {
-    
+
   }
 }
 

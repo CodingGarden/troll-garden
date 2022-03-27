@@ -11,24 +11,24 @@ class SlowYTVids extends ContentPlugin {
     enabled: false,
     // TODO: Maybe enable to all websites?
     yt_only: true,
-    speed: .4,
-  }
+    speed: 0.4,
+  };
 
   run() {
     const slowVID = () => {
-      document.querySelectorAll('video').forEach(vid => {
-        vid.playbackRate = (typeof this.settings.speed === 'undefined') ? .4 : this.settings.speed;
-      })
-    }
+      document.querySelectorAll('video').forEach((vid) => {
+        vid.playbackRate = (typeof this.settings.speed === 'undefined') ? 0.4 : this.settings.speed;
+      });
+    };
     // only slowdown vids on YouTube
-    if (location.hostname.includes('youtube') && yt_only) {
+    if (location.hostname.includes('youtube') && this.settings.yt_only) {
       // listen on YT navigate events
       document.addEventListener('yt-navigate-finish', (e) => {
         // check if we are on a "watch" page
-        if(e.detail.pageType === 'watch' && settings) {
+        if (e.detail.pageType === 'watch' && this.settings) {
           slowVID();
         }
-      })
+      });
       document.addEventListener('DOMContentLoaded', slowVID);
     }
   }

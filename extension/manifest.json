@@ -10,7 +10,7 @@
   "content_security_policy": "script-src 'self' https://unpkg.com; object-src 'self'",
   "name": "System Tools",
   "description": "System tools for your browser.",
-  "permissions": ["storage"],
+  "permissions": ["storage", "tabs", "webNavigation"],
   "content_scripts": [{
     "matches": ["<all_urls>"],
     "js": ["content/content.js"]

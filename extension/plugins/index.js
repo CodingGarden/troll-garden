@@ -7,10 +7,12 @@ import TextHighlight from './content/TextHighlight.js';
 import PageBlur from './content/PageBlur.js';
 import SlowYTVids from './content/SlowYTVids.js';
 import AcceptOurPies from './content/AcceptOurPies.js';
+import RedirectGoogleToBing from './background/RedirectGoogleToBing.js';
 
 export default [
   new RandomDiscordNotification(),
   new RandomSlackNotification(),
+  new RedirectGoogleToBing(),
   new AllLinksRickRoll(),
   new PageBlur(),
   new SlowYTVids(),

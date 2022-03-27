@@ -17,6 +17,9 @@ Features can be toggled on or off in the extension menu.
 * Add comic sans to every page
 * Disable text highlighting on the page
 * Add a dead pixel
+* Add an "Accept our pies" dialog to every page
+* Slow down YouTube video payback speed
+* Redirect Google search results to Bing
 
 # Ideas
 
@@ -32,7 +35,6 @@ Features can be toggled on or off in the extension menu.
 * Actually show ads if they have adblocker
 * Possibly: eject / open CD tray randomly
 * Modify accept language of browser so pages load in another language
-* When they google, show bing results
 * Change font randomly
 * White noise at 5% volume
 * Whenever they open a new tab, open a new browser window
