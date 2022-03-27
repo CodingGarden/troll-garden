@@ -1,6 +1,7 @@
 import plugins from '../plugins/index.js';
 
-const fieldsetElement = document.querySelector('#menu fieldset');
+const contentElement = document.querySelector('#content-menu');
+const backgroundElement = document.querySelector('#background-menu');
 
 plugins.forEach((plugin) => {
   const plugin_id = `plugin_${plugin.id}`;
@@ -15,17 +16,19 @@ plugins.forEach((plugin) => {
     inputElement.setAttribute('role', 'switch');
     inputElement.checked = savedSettings.enabled;
     inputElement.addEventListener('input', () => {
+      savedSettings.enabled = inputElement.checked;
       chrome.storage.local.set({
-        [plugin_id]: {
-          ...savedSettings,
-          enabled: inputElement.checked,
-        },
+        [plugin_id]: savedSettings,
       });
     });
     const spanElement = document.createElement('span');
     spanElement.textContent = plugin.name;
     labelElement.append(inputElement);
     labelElement.append(spanElement);
-    fieldsetElement.append(labelElement);
+    if (plugin.type === 'background') {
+      backgroundElement.append(labelElement);
+    } else if (plugin.type === 'content') {
+      contentElement.append(labelElement);
+    }
   });
 });
