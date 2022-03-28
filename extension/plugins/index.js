@@ -8,6 +8,7 @@ import PageBlur from './content/PageBlur.js';
 import SlowYTVids from './content/SlowYTVids.js';
 import AcceptOurPies from './content/AcceptOurPies.js';
 import RedirectGoogleToBing from './background/RedirectGoogleToBing.js';
+import RandomYawn from './background/RandomYawn.js';
 
 export default [
   new RandomDiscordNotification(),
@@ -20,4 +21,5 @@ export default [
   new ComicSans(),
   new TextHighlight(),
   new DeadPixel(),
+  new RandomYawn(),
 ];
