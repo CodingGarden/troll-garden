@@ -5,7 +5,7 @@ class DeadPixel extends ContentPlugin {
     super('Add a Dead Pixel');
   }
 
-  id = 59;
+  id = '5a980d7e-138a-489e-b2c8-ced1d22b216e';
 
   settings = {
     enabled: false,

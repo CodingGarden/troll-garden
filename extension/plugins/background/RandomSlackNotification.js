@@ -5,7 +5,7 @@ class RandomSlackNotification extends BackgroundPlugin {
     super('Random Slack Notification');
   }
 
-  id = 1;
+  id = 'a6191da0-85e6-4531-ad91-5d40befd8efb';
 
   settings = {
     enabled: false,

@@ -5,7 +5,7 @@ class ComicSans extends ContentPlugin {
     super('Comic Sans font applied to everything');
   }
 
-  id = 58;
+  id = 'e840923f-844d-43da-be8a-acef702d1e28';
 
   settings = {
     enabled: false,

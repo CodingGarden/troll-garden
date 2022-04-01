@@ -5,7 +5,7 @@ class TextHighlight extends ContentPlugin {
     super('Disable text highlighting');
   }
 
-  id = 5;
+  id = '6c0cfe66-80b3-4827-9cd5-afd755725a60';
 
   settings = {
     enabled: false,

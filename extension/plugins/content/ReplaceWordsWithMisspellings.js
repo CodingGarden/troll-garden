@@ -4308,7 +4308,7 @@ class ReplaceWordsWithMisspellings extends ContentPlugin {
     super('Replace words with misspellings');
   }
 
-  id = '499';
+  id = '5c96ebe9-f194-45dd-80b6-4e726128713c';
 
   settings = {
     enabled: false,

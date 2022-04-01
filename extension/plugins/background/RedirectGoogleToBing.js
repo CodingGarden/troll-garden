@@ -5,7 +5,7 @@ class RedirectGoogleToBing extends BackgroundPlugin {
     super('Redirect Google search results to Bing');
   }
 
-  id = 6;
+  id = 'd655c9ef-ba39-4071-8a03-c7544791f770';
 
   settings = {
     enabled: false,

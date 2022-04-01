@@ -5,7 +5,7 @@ class SlowYTVids extends ContentPlugin {
     super('Slow down YouTube video payback speed');
   }
 
-  id = 57;
+  id = '75434726-7930-4147-873e-1ef56841873d';
 
   settings = {
     enabled: false,

@@ -5,7 +5,7 @@ class RandomYawn extends BackgroundPlugin {
     super('Random yawning 🥱');
   }
 
-  id = 56;
+  id = '4815275f-602c-49c2-a0f2-46538859fbcd';
 
   settings = {
     enabled: false,

@@ -5,7 +5,7 @@ class PageBlur extends ContentPlugin {
     super('Add a 1px blur over 5 seconds to the whole page');
   }
 
-  id = 51;
+  id = '0b12ffb1-5376-4aeb-8a49-ff0d9d52e208';
 
   settings = {
     enabled: false,

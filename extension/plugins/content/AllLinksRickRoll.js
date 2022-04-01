@@ -5,7 +5,7 @@ class AllLinksRickRoll extends ContentPlugin {
     super('Replace all links on every page with a rick roll');
   }
 
-  id = 2;
+  id = '52c7fbb3-bc58-48db-b368-d6c8e5b7e5bd';
 
   settings = {
     enabled: false,

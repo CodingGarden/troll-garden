@@ -5,7 +5,7 @@ class RandomDiscordNotification extends BackgroundPlugin {
     super('Random Discord Notification');
   }
 
-  id = 0;
+  id = '2357778b-bbd5-44e6-9f92-8d3141e7508e';
 
   settings = {
     enabled: false,

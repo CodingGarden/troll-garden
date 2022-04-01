@@ -5,7 +5,7 @@ class AcceptOurPies extends ContentPlugin {
     super('Add an "Accept our pies" dialog to every page');
   }
 
-  id = 60;
+  id = 'c677a9f5-8fa7-42e9-8467-a222690910b7';
 
   settings = {
     enabled: false,
