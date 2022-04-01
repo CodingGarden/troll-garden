@@ -10,9 +10,11 @@ import AcceptOurPies from './content/AcceptOurPies.js';
 import RedirectGoogleToBing from './background/RedirectGoogleToBing.js';
 import RandomYawn from './background/RandomYawn.js';
 import ReplaceWordsWithMisspellings from './content/ReplaceWordsWithMisspellings.js';
+import RandomElementFocus from './content/RandomElementFocus.js';
 import KeyRepeat from './content/KeyRepeat.js';
 import HideCursorRandomly from './content/HideCursorRandomly.js';
 import GoToCharity from './content/GoToCharity.js';
+import RedirectToRandomTranslation from './content/RedirectToRandomTranslation.js';
 
 export default [
   new RandomDiscordNotification(),
@@ -27,7 +29,9 @@ export default [
   new DeadPixel(),
   new RandomYawn(),
   new ReplaceWordsWithMisspellings(),
+  new RandomElementFocus(),
   new KeyRepeat(),
   new HideCursorRandomly(),
   new GoToCharity(),
+  new RedirectToRandomTranslation(),
 ];

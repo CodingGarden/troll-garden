@@ -22,6 +22,10 @@ Features can be toggled on or off in the extension menu.
 * Redirect Google search results to Bing
 * Replace words with common misspellings
 * Hide Cursor Randomly
+* Insert random key presses
+* Redirect to a random translation
+* Focus and scroll to random elements on the page
+* Every x clicks takes you to a charity of choice page
 
 # Ideas
 
@@ -30,14 +34,11 @@ Features can be toggled on or off in the extension menu.
 * Replace all images on a page with kittens
 * Mouse pointer jumps a small distance
 * Mouse moves in wrong direction for small increments randomly
-* Keydown event handler that repeats letters every so often
 * Screen smudges, hair, bug
-* Focus random inputs
 * Actually show ads if they have adblocker
 * Possibly: eject / open CD tray randomly
 * Modify accept language of browser so pages load in another language
 * Change font randomly
 * White noise at 5% volume
 * Whenever they open a new tab, open a new browser window
-* Every x clicks takes you to a charity of choice page
 * Play a fart sound whenever they activate their mic in a meeting
