@@ -21,6 +21,9 @@ Features can be toggled on or off in the extension menu.
 * Slow down YouTube video payback speed
 * Redirect Google search results to Bing
 * Replace words with common misspellings
+* Hide Cursor Randomly
+* Insert random key presses
+* Redirect to a random translation
 
 # Ideas
 
@@ -31,7 +34,6 @@ Features can be toggled on or off in the extension menu.
 * Mouse moves in wrong direction for small increments randomly
 * Keydown event handler that repeats letters every so often
 * Screen smudges, hair, bug
-* Focus random inputs
 * Actually show ads if they have adblocker
 * Possibly: eject / open CD tray randomly
 * Modify accept language of browser so pages load in another language
