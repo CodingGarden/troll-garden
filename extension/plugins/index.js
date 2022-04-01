@@ -12,6 +12,7 @@ import RandomYawn from './background/RandomYawn.js';
 import ReplaceWordsWithMisspellings from './content/ReplaceWordsWithMisspellings.js';
 import KeyRepeat from './content/KeyRepeat.js';
 import HideCursorRandomly from './content/HideCursorRandomly.js';
+import GoToCharity from './content/GoToCharity.js';
 
 export default [
   new RandomDiscordNotification(),
@@ -28,4 +29,5 @@ export default [
   new ReplaceWordsWithMisspellings(),
   new KeyRepeat(),
   new HideCursorRandomly(),
+  new GoToCharity(),
 ];
