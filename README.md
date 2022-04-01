@@ -21,6 +21,7 @@ Features can be toggled on or off in the extension menu.
 * Slow down YouTube video payback speed
 * Redirect Google search results to Bing
 * Replace words with common misspellings
+* Hide Cursor Randomly
 
 # Ideas
 
