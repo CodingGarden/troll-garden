@@ -9,6 +9,7 @@ import SlowYTVids from './content/SlowYTVids.js';
 import AcceptOurPies from './content/AcceptOurPies.js';
 import RedirectGoogleToBing from './background/RedirectGoogleToBing.js';
 import RandomYawn from './background/RandomYawn.js';
+import ReplaceWordsWithMisspellings from './content/ReplaceWordsWithMisspellings.js';
 
 export default [
   new RandomDiscordNotification(),
@@ -22,4 +23,5 @@ export default [
   new TextHighlight(),
   new DeadPixel(),
   new RandomYawn(),
+  new ReplaceWordsWithMisspellings(),
 ];
