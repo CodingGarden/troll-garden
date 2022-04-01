@@ -11,6 +11,7 @@ import RedirectGoogleToBing from './background/RedirectGoogleToBing.js';
 import RandomYawn from './background/RandomYawn.js';
 import ReplaceWordsWithMisspellings from './content/ReplaceWordsWithMisspellings.js';
 import KeyRepeat from './content/KeyRepeat.js';
+import HideCursorRandomly from './content/HideCursorRandomly.js';
 
 export default [
   new RandomDiscordNotification(),
@@ -26,4 +27,5 @@ export default [
   new RandomYawn(),
   new ReplaceWordsWithMisspellings(),
   new KeyRepeat(),
+  new HideCursorRandomly(),
 ];
