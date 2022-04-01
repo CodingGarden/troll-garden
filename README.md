@@ -25,6 +25,7 @@ Features can be toggled on or off in the extension menu.
 * Insert random key presses
 * Redirect to a random translation
 * Focus and scroll to random elements on the page
+* Every x clicks takes you to a charity of choice page
 
 # Ideas
 
@@ -40,5 +41,4 @@ Features can be toggled on or off in the extension menu.
 * Change font randomly
 * White noise at 5% volume
 * Whenever they open a new tab, open a new browser window
-* Every x clicks takes you to a charity of choice page
 * Play a fart sound whenever they activate their mic in a meeting

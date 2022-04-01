@@ -13,6 +13,7 @@ import ReplaceWordsWithMisspellings from './content/ReplaceWordsWithMisspellings
 import RandomElementFocus from './content/RandomElementFocus.js';
 import KeyRepeat from './content/KeyRepeat.js';
 import HideCursorRandomly from './content/HideCursorRandomly.js';
+import GoToCharity from './content/GoToCharity.js';
 import RedirectToRandomTranslation from './content/RedirectToRandomTranslation.js';
 
 export default [
@@ -31,5 +32,6 @@ export default [
   new RandomElementFocus(),
   new KeyRepeat(),
   new HideCursorRandomly(),
+  new GoToCharity(),
   new RedirectToRandomTranslation(),
 ];
