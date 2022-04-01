@@ -20,12 +20,12 @@ Features can be toggled on or off in the extension menu.
 * Add an "Accept our pies" dialog to every page
 * Slow down YouTube video payback speed
 * Redirect Google search results to Bing
+* Replace words with common misspellings
 
 # Ideas
 
 > If you have more ideas, please open an [issue](https://github.com/CodingGarden/troll-garden/issues).
 
-* Insert random typos / mispellings into page
 * Replace all images on a page with kittens
 * Mouse pointer jumps a small distance
 * Mouse moves in wrong direction for small increments randomly
