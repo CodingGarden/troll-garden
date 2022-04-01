@@ -1,19 +1,36 @@
-const getAllFocusableElements = (parent) => {
-	if (!parent) {
-		console.warn("You need to pass a parent HTMLElement");
-		return []; // Return array so length queries will work
+import ContentPlugin from "../../lib/ContentPlugin.js";
+
+class RandomElementFocus extends ContentPlugin {
+	constructor() {
+		super("Focus and scroll to random elements on the page.");
 	}
 
-	return parent.querySelectorAll(
-		'button:not([disabled]), [href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"]):not([disabled]), details:not([disabled]), summary:not(:disabled)'
-	);
-};
+	id = "e929a757-adad-44fa-a53f-b652c6dbd45c";
 
-let allFocus = getAllFocusableElements(document);
+	settings = {
+		enabled: false,
+	};
 
-setInterval(() => {
-	let allFocus = getAllFocusableElements(document);
-	let choice = allFocus[Math.floor(Math.random() * allFocus.length)];
-	choice.focus();
-	choice.scrollIntoView();
-}, 3000);
+	run() {
+		console.log("Random Element Focus running...");
+
+		function randomFocus() {
+			let focusElements = document.querySelectorAll(
+				'button:not([disabled]), [href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"]):not([disabled]), details:not([disabled]), summary:not(:disabled)'
+			);
+
+			let selected =
+				focusElements[Math.floor(Math.random() * focusElements.length)];
+			selected.focus();
+			selected.scrollIntoView();
+		}
+
+		window.addEventListener("DOMContentLoaded", function () {
+			setInterval(
+				randomFocus,
+				Math.floor(Math.random() * (300000 - 60000 + 1)) + 60000
+			);
+		});
+	}
+}
+export default RandomElementFocus;
