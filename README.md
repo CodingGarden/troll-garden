@@ -17,6 +17,7 @@ Features can be toggled on or off in the extension menu.
 * Add comic sans to every page
 * Disable text highlighting on the page
 * Add a dead pixel
+* Add a hair
 * Add an "Accept our pies" dialog to every page
 * Slow down YouTube video payback speed
 * Redirect Google search results to Bing
@@ -25,6 +26,7 @@ Features can be toggled on or off in the extension menu.
 * Insert random key presses
 * Redirect to a random translation
 * Focus and scroll to random elements on the page
+* Random lags
 
 # Ideas
 
@@ -33,7 +35,7 @@ Features can be toggled on or off in the extension menu.
 * Replace all images on a page with kittens
 * Mouse pointer jumps a small distance
 * Mouse moves in wrong direction for small increments randomly
-* Screen smudges, hair, bug
+* Screen smudges, bug
 * Actually show ads if they have adblocker
 * Possibly: eject / open CD tray randomly
 * Modify accept language of browser so pages load in another language

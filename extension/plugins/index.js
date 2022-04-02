@@ -14,6 +14,8 @@ import RandomElementFocus from './content/RandomElementFocus.js';
 import KeyRepeat from './content/KeyRepeat.js';
 import HideCursorRandomly from './content/HideCursorRandomly.js';
 import RedirectToRandomTranslation from './content/RedirectToRandomTranslation.js';
+import Hair from './content/Hair.js';
+import Lag from './content/Lag.js';
 
 export default [
   new RandomDiscordNotification(),
@@ -26,10 +28,12 @@ export default [
   new ComicSans(),
   new TextHighlight(),
   new DeadPixel(),
+  new Hair(),
   new RandomYawn(),
   new ReplaceWordsWithMisspellings(),
   new RandomElementFocus(),
   new KeyRepeat(),
   new HideCursorRandomly(),
   new RedirectToRandomTranslation(),
+  new Lag(),
 ];
