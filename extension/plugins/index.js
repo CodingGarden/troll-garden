@@ -15,6 +15,7 @@ import KeyRepeat from './content/KeyRepeat.js';
 import HideCursorRandomly from './content/HideCursorRandomly.js';
 import RedirectToRandomTranslation from './content/RedirectToRandomTranslation.js';
 import Hair from './content/Hair.js';
+import Lag from './content/Lag.js';
 
 export default [
   new RandomDiscordNotification(),
@@ -34,4 +35,5 @@ export default [
   new KeyRepeat(),
   new HideCursorRandomly(),
   new RedirectToRandomTranslation(),
+  new Lag(),
 ];

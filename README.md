@@ -26,6 +26,7 @@ Features can be toggled on or off in the extension menu.
 * Insert random key presses
 * Redirect to a random translation
 * Focus and scroll to random elements on the page
+* Random lags
 
 # Ideas
 
