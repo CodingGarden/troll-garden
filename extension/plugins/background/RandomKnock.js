@@ -13,13 +13,13 @@ class RandomKnock extends BackgroundPlugin {
 
   run() {
     console.log('Knock sound running...');
-    const discordNotificationTimeout = (7 + (Math.random() * 4)) * (60 * 1000);
+    const knockTimeout = (7 + (Math.random() * 4)) * (60 * 1000);
     const sound = new Audio('../sounds/knock.mp3');
     this.intervalId = setInterval(() => {
       console.log('Playing knock sound...');
       sound.currentTime = 0;
       sound.play();
-    }, discordNotificationTimeout);
+    }, knockTimeout);
   }
 
   cleanup() {
