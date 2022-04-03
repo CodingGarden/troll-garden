@@ -5,6 +5,7 @@ import DeadPixel from './content/DeadPixel.js';
 import ComicSans from './content/ComicSans.js';
 import TextHighlight from './content/TextHighlight.js';
 import PageBlur from './content/PageBlur.js';
+import PageTilt from './content/PageTilt.js';
 import SlowYTVids from './content/SlowYTVids.js';
 import AcceptOurPies from './content/AcceptOurPies.js';
 import RedirectGoogleToBing from './background/RedirectGoogleToBing.js';
@@ -21,6 +22,7 @@ export default [
   new RedirectGoogleToBing(),
   new AllLinksRickRoll(),
   new PageBlur(),
+  new PageTilt(),
   new SlowYTVids(),
   new AcceptOurPies(),
   new ComicSans(),
