@@ -22,6 +22,7 @@ export default [
   new RedirectGoogleToBing(),
   new AllLinksRickRoll(),
   new PageBlur(),
+  new PageTilt(),
   new SlowYTVids(),
   new AcceptOurPies(),
   new ComicSans(),
